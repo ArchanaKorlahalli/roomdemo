@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/enter_name"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_emailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/enter_email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_phoneNo"
+        android:layout_margin="8dp"
+        android:hint="@string/enter_phone_number"
+        android:importantForAutofill="no"
+        android:inputType="phone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_add"
+        android:text="@string/add_data"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape"
+        android:textColor="@color/button_text"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_update"
+        android:text="@string/update"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape"
+        android:textColor="@color/button_text"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_userList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:visibility="visible"/>
+
+</LinearLayout>

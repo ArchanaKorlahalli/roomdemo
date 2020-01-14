@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RoomDemoApplication</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="add_data">Add Data</string>
+    <string name="update">Update</string>
+    <string name="name">Name</string>
+    <string name="email_id">Email Id</string>
+    <string name="phone_number">Phone Number</string>
+</resources>
